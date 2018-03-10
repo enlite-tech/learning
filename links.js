@@ -1,3 +1,9 @@
+=========================================================================================================================================
+
+
+set @values = 'ritesh_dj';
+SELECT SUBSTR(@values,1,LOCATE('_',@values)-1) `1st value`;
+SELECT SUBSTR(@values,LOCATE('_',@values)+1) `2nd value`;
 
 Shared data with query in spread sheet
 =QUERY(Articles!A:Z,"SELECT * WHERE D > 0")
